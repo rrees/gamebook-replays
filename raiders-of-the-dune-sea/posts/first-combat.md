@@ -1,3 +1,6 @@
+---
+date: Created
+---
 
 # First combat
 
