@@ -1,5 +1,6 @@
 ---
 title: Gamebook replays
+layout: layouts/base.njk
 ---
 
 # Gamebook replays
