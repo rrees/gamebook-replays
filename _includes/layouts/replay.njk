@@ -1,13 +1,13 @@
 ---
 layout: layouts/base.njk
 eleventyImport:
-  collections: ["duneSea"]
+  collections: ["DuneSea"]
 ---
 
     {{ content | safe }}
 
     <ul>
-		{%- for post in collections.duneSea -%}
+		{%- for post in collections.DuneSea -%}
 		<li><a href="{{post.url}}">{{ post.data.title }}</a></li>
 		{%- endfor -%}
 	</ul>
