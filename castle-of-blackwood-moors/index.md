@@ -1,7 +1,9 @@
 ---
 title: The Castle of Blackwood Moors
 
-layout: layouts/base.njk
+layout: layouts/replay.njk
+
+postsTag: CastleBlackwoodMoors
 ---
 
 # The Castle of Blackwood Moors
