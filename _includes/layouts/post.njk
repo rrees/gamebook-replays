@@ -2,8 +2,22 @@
 layout: layouts/base.njk
 ---
 
+{% set replayPosts = collections[postsTag] %}
+{% set previousPost = replayPosts | getPreviousCollectionItem %}
+{% set nextPost = replayPosts | getNextCollectionItem %}
+
 <main class="gameplay-post">
 
 {{ content | safe }}
 
 </main>
+
+
+{% if previousPost or nextPost %}
+<section>
+{% if previousPost %}Previous: <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a>{% endif %}
+{% if nextPost %}Next: <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>{% endif %}
+</section>
+{% endif %}
+
+

@@ -1,7 +1,6 @@
 ---
 title: Setting off
 date: Created
-layout: layouts/post
 ---
 
 # To Adventure!
