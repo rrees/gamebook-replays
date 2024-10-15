@@ -1,5 +1,4 @@
 ---
-layout: layouts/base.njk
 title: Prologue
 date: 2023-02-24
 ---
