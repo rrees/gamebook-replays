@@ -1,7 +1,7 @@
-module.exports = function(eleventyConfig) {
-  eleventyConfig.addPassthroughCopy("base.css");
+import { InputPathToUrlTransformPlugin } from "@11ty/eleventy";
 
-  return {
-    markdownTemplateEngine: "njk",
-  }
-};
+export default function (eleventyConfig) {
+  eleventyConfig.addPlugin(InputPathToUrlTransformPlugin);
+
+  eleventyConfig.addPassthroughCopy("base.css");
+}
