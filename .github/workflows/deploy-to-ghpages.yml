@@ -3,7 +3,7 @@ name: Deploy site to Github Pages
 on:
   push:
     branches:
-      - main
+      - $default-branch
 
   workflow_dispatch:
 
@@ -18,21 +18,20 @@ concurrency:
 
 jobs:
   deploy:
+    runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-
-    runs-on: ubuntu-latest
 
     permissions:
       contents: write
 
     steps:
-       - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-       - name: Setup Node
-         uses: actions/setup-node@v3
-         with:
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
           node-version: 22
           cache: 'npm'
 
