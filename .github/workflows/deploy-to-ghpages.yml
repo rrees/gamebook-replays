@@ -34,7 +34,7 @@ jobs:
         run: npm ci
 
       - name: Build
-        run: make build
+        run: npx eleventy --path-prefix 'gamebook-replays'
 
       - name: Setup pages
         uses: actions/configure-pages@v5
