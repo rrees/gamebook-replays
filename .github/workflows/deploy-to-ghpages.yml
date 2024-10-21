@@ -22,11 +22,6 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-<<<<<<< HEAD
-
-=======
-    runs-on: ubuntu-latest
->>>>>>> aa7412367edca66ee1e8678ca66e84d648d7f6b0
     permissions:
       contents: write
     steps:
