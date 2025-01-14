@@ -7,5 +7,5 @@ export default function (eleventyConfig) {
   eleventyConfig.addPlugin(InputPathToUrlTransformPlugin);
   eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
 
-  eleventyConfig.addPassthroughCopy("base.css");
+  eleventyConfig.addPassthroughCopy("css");
 }
